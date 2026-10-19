@@ -1,7 +1,6 @@
 package factorielle;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +11,7 @@ class FactorielleTest {
     @Test
     void factorialWith5Test() {
         long obs = f.fact(5);
-        assertTrue(5 < obs);        // oracle (très) faible
+        assertEquals(120, obs);     // oracle exact
     }
 
     @Test
